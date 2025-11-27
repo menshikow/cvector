@@ -7,6 +7,7 @@
 /* Return codes:
    VEC_OK = 0
    VEC_ERR_ALLOC = 1
+   VEC_ERR_OBB = 2
 */
 
 int vec_init(Vec *v, size_t elem_size) {
