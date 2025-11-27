@@ -1,8 +1,5 @@
 # CVector Library
 
-A lightweight, dynamic, generic vector library for C
-
-
 ---
 
 ## Make
@@ -21,6 +18,4 @@ cmake --build .
 
 - [ ] Unit tests
 - [ ] Implement other header functions
-- [ ] Mb
-- [ ] Hui
-- [ ] Hui
+- [ ] Mb macros implementations
