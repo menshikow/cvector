@@ -1,43 +1,43 @@
-#ifndef CVECTOR_CVECTOR_H
-#define CVECTOR_CVECTOR_H
+#ifndef CVECTOR_H
+#define CVECTOR_H
 
-#include <stdbool.h>
 #include <stddef.h>
-#include <stdint.h>
 
-/*
- *
- */
+/* error codes */
+#define VEC_OK          0 // operation succeeded
+#define VEC_ERR_ALLOC   1 // memory allocation error
+#define VEC_ERR_OOB     2 // index out of range
+
 typedef struct {
-    void *data;          // pointer to the start of the contiguous memory block
-    size_t size;         // current number of elements
-    size_t capacity;     // total number of elements that can fit
-    size_t element_size; // the size in bytes of a single element
-} CVector;
+    void *data; // allocated block
+    size_t size; // number of elements
+    size_t capacity; // number of elements allocated
+    size_t elem_size; // sizeof(T)
+} Vec;
 
-/*
- *
- */
-CVector* cvec_create(size_t initial_capacity, size_t element_size);
 
-/*
- *
- */
-void cvec_destroy(CVector *vec);
+/* creation / destruction */
+int vec_init(Vec *vec, size_t elem_size);
 
-/*
- *
- */
-bool cvec_push(CVector *vec, void *element);
+void vec_deinit(Vec *vec);
 
-/*
- *
- */
-void* cvec_pop(CVector *vec);
+/* capacity management */
+int vec_reserve(Vec *v, size_t new_cap);
 
-/*
- *
- */
-void* cvec_get(CVector *vec, size_t index);
+int vec_shrink_to_fit(Vec *v);
 
-#endif //CVECTOR_CVECTOR_H
+
+/* modification */
+int vec_push_back(Vec *v, const void *elem);
+
+
+/* accessors */
+void *vec_get(Vec *v, size_t index);
+
+size_t vec_size(const Vec *v);
+
+size_t vec_capacity(const Vec *v);
+
+#endif
+
+

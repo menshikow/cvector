@@ -1,0 +1,4 @@
+/Users/madonnaprayer/dev/c_programming/cvector/build/CMakeFiles/cvector.dir
+/Users/madonnaprayer/dev/c_programming/cvector/build/CMakeFiles/test.dir
+/Users/madonnaprayer/dev/c_programming/cvector/build/CMakeFiles/edit_cache.dir
+/Users/madonnaprayer/dev/c_programming/cvector/build/CMakeFiles/rebuild_cache.dir
