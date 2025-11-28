@@ -38,3 +38,10 @@ int vec_push_back(Vec *v, const void *element) {
   v->size++;
   return VEC_OK;
 }
+
+
+void vec_deinit(Vec *v) {
+  free(v->data);
+  v->data = NULL;
+  v->size = v->capacity = 0;
+}
