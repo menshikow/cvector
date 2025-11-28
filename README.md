@@ -17,5 +17,4 @@ cmake --build .
 # TODO
 
 - [ ] Unit tests
-- [ ] Implement other header functions
 - [ ] Mb macros implementations
