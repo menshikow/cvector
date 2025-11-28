@@ -1,7 +1,5 @@
 # CVector Library
 
----
-
 some useless c lib for dynamic array implementation
 ___
 
