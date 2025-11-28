@@ -2,6 +2,9 @@
 
 ---
 
+some useless c lib for dynamic array implementation
+___
+
 ## Make
 
 ```bash
@@ -11,10 +14,3 @@ cmake ..
 cmake --build .
 ../bin/test
 ```
-
---- 
-
-# TODO
-
-- [ ] Unit tests
-- [ ] Mb macros implementations
