@@ -15,7 +15,7 @@ int main() {
     printf("vec_init passed\n");
 
     // --- Test vec_push_back ---
-    int nums[] = {10, 20, 30};
+    constexpr int nums[] = {10, 20, 30};
     for (int i = 0; i < 3; i++) {
         if (vec_push_back(&v, &nums[i]) != VEC_OK) {
             printf("vec_push_back failed\n");
