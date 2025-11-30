@@ -39,6 +39,8 @@ dkms.conf
 build/
 cmake-build-debug/
 bin/
+build-debug/
+build-release/
 
 # IDE/project config
 .idea/
