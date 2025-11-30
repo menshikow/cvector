@@ -4,10 +4,9 @@
 
 int main() {
   Vec v;
-  int result;
 
   // --- Test vec_init ---
-  result = vec_init(&v, sizeof(int));
+  int result = vec_init(&v, sizeof(int));
   if (result != VEC_OK) {
     printf("vec_init failed\n");
     return 1;
